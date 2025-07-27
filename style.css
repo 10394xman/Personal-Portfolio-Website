@@ -1,0 +1,149 @@
+/* Custom Variables - Used with Bootstrap */
+/* :root { ... } — Defines global CSS variables, accessed anywhere in your CSS.*/
+:root {      
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --color-accent: #0d6efd;
+  --header-height: 60px; /* Bootstrap navbar height */
+  --transition: all 0.3s ease;
+}
+
+/*targets any element with the attribute data-theme="dark" added by js*/
+/* Dark Theme */
+[data-theme="dark"] {
+  --bs-body-color: #fff;
+  --bs-body-bg: #121212;
+  --bs-dark: #222;
+  --bs-light: #2d2d2d;
+  --color-accent: #90caf9;
+  --bs-primary: #90caf9;
+  
+  /* Override Bootstrap background classes for dark mode */
+  .bg-light {
+    background-color: #2d2d2d !important;
+  }
+  
+  .bg-dark {
+    background-color: #121212 !important;
+  }
+  
+  /* Card styling for dark mode */
+  .card {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+  }
+  
+  /* Form controls for dark mode */
+  .form-control {
+    background-color: #333 !important;
+    border-color: #555 !important;
+    color: #fff ;
+  }
+  
+  .form-control:focus {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Text colors for dark mode */
+  .text-dark {
+    color: #eee !important;
+  }
+
+  /* Badge styling */
+  .badge.bg-light {
+    background-color: #444 !important;
+    color: #fff !important;
+  }
+    /* Navbar text color for dark mode */
+  .navbar,
+  .navbar .navbar-brand,
+  .navbar .nav-link,
+  .navbar .form-check-label,
+  .navbar .navbar-toggler-icon {
+    color: #fff !important;
+  }
+  .navbar .nav-link.active,
+  .navbar .nav-link:focus,
+  .navbar .nav-link:hover {
+    background-color: #404040; /* Light gray, adjust as needed */
+    color: var(--color-accent) !important;
+  }
+  .navbar-toggler,
+  .project-div .card,
+  #contact div,
+  #contactForm input,
+  #contactForm textarea {
+    border-color: #ccc !important;
+  }
+  .navbar-toggler-icon,
+  .btn-social {
+    filter: invert(1);
+  }
+  .logo-invert {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  background-color: #e9ecef; /* Light gray, adjust as needed */
+  color: var(--color-accent) !important;
+}
+
+/* Adjustments to Bootstrap */
+body {
+  padding-top: var(--header-height);
+  transition: var(--transition);
+}
+
+/* Hero Section */      
+.hero {
+  /* ensures our hero section never gets shorter then the visible space minus the header*/
+  min-height: calc(100vh - var(--header-height));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Divider style */
+.divider {
+  height: 3px;
+  width: 70px;
+  background-color: var(--color-accent);
+  margin: 1.5rem auto;
+}
+
+/* Social buttons */
+.btn-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Typing effect & cursor */
+.typed-text {
+  color: var(--color-accent);
+}
+
+.cursor {
+  display: inline-block;
+  background-color: currentColor;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.logo img{
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+}

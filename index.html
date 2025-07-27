@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio showcasing projects, skills, and resume"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web developer, resume, skills, projects"
+    />
+    <meta name="author" content="Your Name" />
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <h1 class="navbar-brand mb-0">Sujay Das</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="form-check form-switch ms-3">
+              <input class="form-check-input" type="checkbox" id="checkbox" />
+              <label class="form-check-label" for="checkbox">
+                <span id="theme-icon" class="ms-2"
+                  ><i class="fas fa-moon"></i
+                ></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero d-flex align-items-center min-vh-100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 hero-content mb-4 mb-lg-0">
+              <h1 class="display-4">
+                Hi, I'm <span class="text-primary">Sujay Das</span>
+              </h1>
+              <h2 class="mb-4">
+                A becoming <span class="typed-text"></span
+                ><span class="cursor">&nbsp;</span>
+              </h2>
+              <p class="lead mb-5">Welcome to my portfolio website</p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary me-3">Contact Me</a>
+                <a href="#projects" class="btn btn-outline-secondary text-dark"
+                  >View My Work</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 hero-image mt-5 mt-lg-0">
+              <div class="d-flex justify-content-center">
+                <div class="shadow" style="width: 300px">
+                  <img
+                    src="./images/photo.jpeg"
+                    alt="Sujay Das"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-5 my-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold">About Me</h2>
+            <hr class="divider mx-auto" />
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="lead mb-4">
+                &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm a passionate professional with
+                gradually working and learning experience in the field of web
+                development. I specialize in Full Stack Development, focusing on
+                (React, Node.js, Express & MongoDB). I'm dedicated to delivering
+                high-quality work and continuously expanding my knowledge and
+                skills.
+              </p>
+
+              <p class="lead mb-5">
+                &nbsp;&nbsp;&nbsp;&nbsp;When I'm not working, I enjoy talking
+                with people. I believe in open communication and collaboration
+                to achieve the best results.
+              </p>
+
+              <div class="skills">
+                <h2 class="mb-4">Skills</h2>
+                <div class="row">
+                  <div class="d-flex justify-content-between flex-wrap p-5">
+                    <div class="logo logo-invert">
+                      <img src="/images/mongo.svg" alt="" />
+                    </div>
+                    <div class="logo"><img src="/images/node.webp" alt="" /></div>
+                    <div class="logo logo-invert">
+                      <img src="/images/express.webp" alt="" />
+                    </div>
+                    <div class="logo"><img src="/images/react.webp" alt="" /></div>
+                    <div class="logo logo-invert">
+                      <img src="/images/github.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-5 my-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold">Projects</h2>
+            <hr class="divider mx-auto" />
+          </div>
+          <div class="row g-4 project-div">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow">
+                <div
+                  class="card-img-top bg-light d-flex justify-content-center"
+                  style=" width: 100%;"
+                >
+                  <img src="images/spotify.png" alt="Spotify Clone" class="img-fluid rounded" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Spotify Clone</h5>
+                  <p class="card-text">
+                    First ever project I have built, with only : HTML and CSS.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-light text-dark me-1">HTML</span>
+                    <span class="badge bg-light text-dark me-1">CSS</span>
+                  </div>
+                  <div class="d-flex">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-outline-primary me-2"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i> Live</a
+                    >
+                    <a
+                      href="https://github.com/10394xman/Project1"
+                      class="btn btn-sm btn-outline-dark bg-dark text-light"
+                      target="_blank"
+                      ><i class="fab fa-github"></i> Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow">
+                <div class="card-img-top bg-light d-flex justify-content-center" style="width: 100%;">
+                  <img src="images/AirBnb.png" alt="AirBnb Clone" class="img-fluid rounded" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">AirBnb_Clone</h5>
+                  <p class="card-text">
+                    A clone of AirBnb using React for the frontend and Node.js, Express.js and MongoDB for the backend & DB. I implemented features such as user authentication, property listings, etc.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-light text-dark me-1">MongoDB</span>
+                    <span class="badge bg-light text-dark me-1">Express.js</span>
+                    <span class="badge bg-light text-dark me-1">React</span>
+                    <span class="badge bg-light text-dark">Node.js</span>
+
+                  </div>
+                  <div class="d-flex">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-outline-primary me-2"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i> Live</a
+                    >
+                    <a
+                      href="https://github.com/10394xman/AirBnb_Clone"
+                      class="btn btn-sm btn-outline-dark bg-dark text-light"
+                      target="_blank"
+                      ><i class="fab fa-github"></i> Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow">
+                <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="width: 100%;">
+                  <img src="images/portfolio.png" alt="AirBnb Clone" class="img-fluid rounded" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">My Portfolio Website</h5>
+                  <p class="card-text">
+                    Nothing much, just a simple portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-light text-dark me-1">Python</span>
+                    <span class="badge bg-light text-dark me-1">Django</span>
+                    <span class="badge bg-light text-dark">PostgreSQL</span>
+                  </div>
+                  <div class="d-flex">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-outline-primary me-2"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i> Live</a
+                    >
+                    <a
+                      href="https://github.com/10394xman/Personal-Portfolio-Website"
+                      class="btn btn-sm btn-outline-dark bg-dark text-light"
+                      target="_blank"
+                      ><i class="fab fa-github"></i> Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume" class="py-5 my-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold">Resume</h2>
+            <hr class="divider mx-auto" />
+          </div>
+          <!-- <div class="text-center mb-5">
+            <a href="resume.pdf" download class="btn btn-primary btn-lg">
+              <i class="fas fa-download me-2"></i> Download Resume PDF
+            </a>
+          </div> -->
+          <div class="row">
+            <div class="col-lg-4 mb-5">
+              <div class="card shadow h-100">
+                <div class="card-body">
+                  <h3 class="card-title mb-4">
+                    <i class="fas fa-briefcase me-2"></i> Work Experience
+                  </h3>
+                  <div class="mb-4">
+                    <h4 class="h5">Fresher</h4>
+                    <h5 class="h6 text-muted">Built projects on | Spotify, AirBnb, etc.</h5>
+                    <p class="mt-3">Eager to work in a real-world project.</p>
+                  </div>
+                  <div>
+                    <h4 class="h5">Previous Job Title</h4>
+                    <h5 class="h6 text-muted">
+                      Previous Company | 20XX - 20XX
+                    </h5>
+                    <p class="mt-3">
+                      Job description and responsibilities. Highlight your
+                      achievements and contributions during your time in this
+                      role.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5">
+              <div class="card shadow h-100">
+                <div class="card-body">
+                  <h3 class="card-title mb-4">
+                    <i class="fas fa-graduation-cap me-2"></i> Education
+                  </h3>
+                  <div class="mb-4">
+                    <h4 class="h5">B.C.A</h4>
+                    <h5 class="h6 text-muted">IGNOU University | 2023 - Present</h5>
+                    <p class="mt-3">
+                      Pursuing a Bachelor's degree in Computer Applications with a focus on software development and programming.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="h5">Higher Secondary</h4>
+                    <h5 class="h6 text-muted">
+                      Arya Vidyapeeth College | 2020 - 2022
+                    </h5>
+                    <p class="mt-3">
+                      Passed Higher Secondary with a focus on Science and Mathematics. Passed with 64.8% marks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 my-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold">Contact Me</h2>
+            <hr class="divider mx-auto" />
+          </div>
+          <div class="row">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="card shadow h-100">
+                <div class="card-body py-5">
+                  <div class="text-center mb-4">
+                    <div class="mb-4">
+                      <i class="fas fa-envelope fa-3x text-primary"></i>
+                      <h3 class="h5 mt-3">Email</h3>
+                      <p>xman10394@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                      <i class="fas fa-phone fa-3x text-primary"></i>
+                      <h3 class="h5 mt-3">Phone</h3>
+                      <p>+91 7xxxxxxx63</p>
+                    </div>
+                    <div class="mb-4">
+                      <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                      <h3 class="h5 mt-3">Location</h3>
+                      <p>Guwahati, India</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a
+                      href="https://www.linkedin.com/in/sujay-das-89397b371/"
+                      class="btn btn-outline-dark btn-social mx-1"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/10394xman"
+                      class="btn btn-outline-dark btn-social mx-1"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="btn btn-outline-dark btn-social mx-1"
+                      target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="btn btn-outline-dark btn-social mx-1"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card shadow">
+                <div class="card-body p-4">
+                  <form id="contactForm">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        name="subject"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0">
+            &copy; <span id="current-year"></span> &nbsp; Sujay Das . All Rights
+            Reserved.
+          </p>
+          <a href="#hero" class="btn btn-primary btn-sm rounded-circle">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
